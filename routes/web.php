@@ -24,16 +24,23 @@ Route::get('/my-ticket', [EventController::class, 'ticket'])->name('ticket');
 
 // Rute Admin Area
 Route::get('/dashboard', function () {
-    return view('admin.dashboard');});
+    return view('admin.dashboard');
+});
 Route::get('/events', function () {
-    return view('admin.events');});
+    return view('admin.events');
+});
 Route::get('/transaksi', function () {
-    return view('admin.transactions');});
+    return view('admin.transactions');
+});
 Route::get('/tiket', function () {
-    return view('ticket');});
+    return view('ticket');
+});
 Route::get('/checkout', function () {
-    return view('checkout');});
+    return view('checkout');
+});
 Route::get('/event-detail', function () {
-    return view('event-detail');});
+    return view('event-detail');
+});
 Route::get('/', function () {
-    return view('welcome');});
+    return view('welcome');
+});
