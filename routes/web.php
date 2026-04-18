@@ -23,18 +23,25 @@ Route::get('/checkout', [EventController::class, 'checkout'])->name('checkout');
 Route::get('/my-ticket', [EventController::class, 'ticket'])->name('ticket');
 
 // Rute Admin Area
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-    // URL: /admin
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    
-    // URL: /admin/events
-    Route::get('/events-detail', [EventController::class, 'index'])->name('events');
-
-    Route::get('/transactions', [DashboardController::class, 'transactions'])->name('transactions');
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
 });
 
-    Route::get('/event-detail', [EventController::class, 'show'])->name('events.show');
-    Route::get('/checkout', [EventController::class, 'checkout'])->name('checkout');
+Route::get('/events', function () {
+    return view('admin.events');
+});
+Route::get('/transaksi', function () {
+    return view('admin.transactions');
+});
+Route::get('/tiket', function () {
+    return view('ticket');
+});
+Route::get('/checkout', function () {
+    return view('checkout');
+});
+Route::get('/event-detail', function () {
+    return view('event-detail');
+});
 Route::get('/', function () {
     return view('welcome');
 });
