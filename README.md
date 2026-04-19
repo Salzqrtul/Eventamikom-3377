@@ -1,13 +1,13 @@
 # Project Penjualan Baju Batik jogja Salsabila 
 Nama : Salsabila Quratul Aini
 NIM : 24.12.3377
-Link Repository : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
-Halaman Dashboard : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin
-Halaman Event : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/event-detail
-Halaman Transaksi : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transctions
-Halaman Beranda : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
-Halaman Detail Event : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/event-detail
-Halaman Checkout : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/checkout
+Link Repository: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+Halaman Dashboard: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin
+Halaman Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/event-detail
+Halaman Transaksi: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transctions
+Halaman Beranda: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+Halaman Detail Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/event-detail
+Halaman Checkout: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/checkout
 
 ---
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
