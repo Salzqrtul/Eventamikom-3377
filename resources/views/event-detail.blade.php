@@ -1,4 +1,4 @@
-@extends('layouts')
+@extends('layouts.app')
 @section('content')
 
  <main class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -81,10 +81,10 @@
                         </p>
                     </div>
                     <div>
-                        <a href="checkout.html"
-                            class="inline-block px-10 py-5 bg-white text-indigo-600 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-xl">
-                            Pesan Sekarang
-                        </a>
+<a href="{{ route('checkout') }}"
+   class="inline-block px-10 py-5 bg-white text-indigo-600 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-xl">
+   Pesan Sekarang
+</a>
                     </div>
                 </div>
                 <!-- Decoration -->

@@ -16,9 +16,10 @@ class EventController extends Controller
     {
         return view('event-detail');
     }
-   public function checkout()
-    { // Pakai kurung buka yang ini
-        return view('checkout');
-    } // Pakai kurung tutup yang ini
+  public function checkout()
+{
+    return view('checkout'); 
+}
+
 
 }
