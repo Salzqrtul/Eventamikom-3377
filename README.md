@@ -1,7 +1,7 @@
 # Project Penjualan Baju Batik jogja Salsabila 
 <hr>Nama : Salsabila Quratul Aini
 <hr>NIM : 24.12.3377
-<hr>Link Repository: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+<hr>Link : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
 <hr>Halaman Dashboard: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin
 <hr>Halaman Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/event-detail
 <hr>Halaman Transaksi: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transctions
