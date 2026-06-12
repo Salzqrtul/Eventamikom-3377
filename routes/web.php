@@ -56,3 +56,23 @@ Route::prefix('admin')->name('admin.')->group(function () {
     });
 
 });
+// --- RUTE RAHASIA UNTUK ISI DATABASE DI LARAVEL CLOUD ---
+Route::get('/gas-seed', function () {
+    try {
+        // Cek apakah admin sudah ada
+        $adminAda = \App\Models\User::where('email', 'admin@amikom.ac.id')->exists();
+        
+        if (!$adminAda) {
+            \App\Models\User::create([
+                'name' => 'Administrator',
+                'email' => 'admin@amikom.ac.id',
+                'password' => bcrypt('password'), // Sesuai modul wajib di-bcrypt!
+            ]);
+            return "Mantap! Akun admin@amikom.ac.id berhasil dimasukkan ke Database Cloud.";
+        }
+        
+        return "Akun admin sudah ada di database cloud kamu.";
+    } catch (\Exception $e) {
+        return "Waduh error: " . $e->getMessage();
+    }
+});

@@ -1,53 +1,50 @@
 <?php
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\User;
-use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    // 1. Fungsi menampilkan halaman view formulir
-    public function showLogin() {
-        if (Auth::check()) {
-            return redirect()->route('admin.dashboard');
-        }
+    // 1. Menampilkan halaman formulir login (Sesuai Bab 8.4)
+    public function showLogin() 
+    {
         return view('auth.login');
     }
 
-    // 2. Fungsi memproses validasi Submit Log In
-    public function login(Request $request) {
-        $request->validate([
+    // 2. Memproses submit Log In (Sesuai Bab 8.4)
+    public function login(Request $request) 
+    {
+        // Validasi input data dari form
+        $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
 
-        // Cek manual data user di database
-        $user = User::where('email', $request->email)->first();
-        
-        if (!$user) {
-            return back()->withErrors(['email' => 'Email tidak terdaftar di database kami.'])->onlyInput('email');
+        // Autentikasi mencocokkan credentials ke database menggunakan Bcrypt bawaan Laravel
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            
+            // Diarahkan langsung ke rute dashboard admin pasca-auth sukses
+            return redirect()->route('admin.dashboard'); 
         }
 
-        // Cek kecocokan password
-        if (!Hash::check($request->password, $user->password)) {
-            return back()->withErrors(['email' => 'Password yang Anda masukkan salah.'])->onlyInput('email');
-        }
-
-        // PAKSA LOGIN & BYPASS (Menghindari gangguan session/middleware)
-        Auth::login($user);
-        $request->session()->regenerate();
-        
-        return redirect()->route('admin.dashboard');
+        // Jika gagal, dikembalikan ke halaman login dengan pesan error (Sesuai Tugas No. 3 Halaman 73)
+        return back()->withErrors([
+            'email' => 'Email atau Password yang Anda berikan tidak terdaftar di database kami.',
+        ])->onlyInput('email');
     }
 
-    // 3. Fungsi memroses Log Out (Keluar)
-    public function logout(Request $request) {
+    // 3. Memproses Log Out / Keluar (Sesuai Bab 8.4)
+    public function logout(Request $request) 
+    {
         Auth::logout();
+        
         $request->session()->invalidate();
         $request->session()->regenerateToken();
+        
         return redirect('/');
     }
 }

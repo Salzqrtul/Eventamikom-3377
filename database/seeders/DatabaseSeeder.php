@@ -9,12 +9,11 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // ========== 1. Akun Admin Utama ==========
-        \App\Models\User::create([
-            'name' => 'Admin Amikom',
-            'email' => 'admin@amikom.ac.id',
-            'password' => bcrypt('password'),
-            'role' => 'admin',
-        ]);
+       \App\Models\User::create([
+    'name' => 'Administrator',
+    'email' => 'admin@amikom.ac.id',
+    'password' => bcrypt('password'),
+]);
 
         // ========== 2. Insert Kategori Event (MINIMAL 3 KATEGORI) ==========
         // Kategori yang sudah ada sebelumnya
