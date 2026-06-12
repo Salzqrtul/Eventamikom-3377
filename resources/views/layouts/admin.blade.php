@@ -16,13 +16,24 @@
         </div>
         <nav class="flex-1 space-y-2">
             <p class="text-[10px] font-bold uppercase tracking-widest text-indigo-400 mb-4 px-2">Main Menu</p>
-            <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-indigo-800 rounded-xl font-bold transition">Dashboard</a>
-            <a href="{{ route('admin.events.index') }}" class="flex items-center gap-3 px-4 py-3 {{ request()->routeIs('events.*') ? 'bg-indigo-800 text-white' : '' }} rounded-xl font-bold transition">
-                Kelola Event
+            <a href="{{ route('admin.dashboard') }}" 
+               class="flex items-center gap-3 px-4 py-3 {{ request()->routeIs('admin.dashboard') ? 'bg-white/20 text-white' : 'hover:bg-indigo-800' }} rounded-xl font-semibold transition">
+                 Dashboard
+            </a>
+            <a href="{{ route('admin.events.index') }}" 
+               class="flex items-center gap-3 px-4 py-3 {{ request()->routeIs('admin.events.*') ? 'bg-white/20 text-white' : 'hover:bg-indigo-800' }} rounded-xl font-semibold transition">
+                 Kelola Event
+            </a>
+            <a href="{{ route('admin.categories.index') }}" 
+               class="flex items-center gap-3 px-4 py-3 {{ request()->routeIs('admin.categories.*') ? 'bg-white/20 text-white' : 'hover:bg-indigo-800' }} rounded-xl font-semibold transition">
+                 Kategori
+            </a>
+            <a href="{{ route('admin.partners.index') }}" 
+               class="flex items-center gap-3 px-4 py-3 {{ request()->routeIs('admin.partners.*') ? 'bg-white/20 text-white' : 'hover:bg-indigo-800' }} rounded-xl font-semibold transition">
+                 Partner
             </a>
         </nav>
     </aside>
-
 
     <main class="flex-1 p-10 overflow-y-auto">
         @yield('content')
