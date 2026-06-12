@@ -9,7 +9,12 @@
 <hr>Halaman Detail Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/event-detail
 <hr>Halaman Checkout: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/checkout
 <hr>Halaman Kelola Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events
+
+
 <hr>Halaman CRUD: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events/create
+
+Tugas 8
+<hr>Halaman Login : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/login
 
 ---
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>

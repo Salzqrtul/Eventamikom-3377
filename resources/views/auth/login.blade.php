@@ -16,11 +16,19 @@
             <p class="text-slate-500">AmikomEventHub Dashboard</p>
         </div>
 
-        @if(session('error'))
-            <div class="bg-red-100 text-red-600 p-4 rounded-xl mb-6 font-bold text-sm text-center">
-{{ session('error') }}
-            </div>
-        @endif
+@if ($errors->any())
+    <div class="bg-red-100 text-red-600 p-4 rounded-xl mb-6 font-bold text-sm text-center border border-red-200">
+        @foreach ($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
+    </div>
+@endif
+
+@if(session('error'))
+    <div class="bg-red-100 text-red-600 p-4 rounded-xl mb-6 font-bold text-sm text-center border border-red-200">
+        {{ session('error') }}
+    </div>
+@endif
 
         <form action="{{ route('admin.login.post') }}" method="POST" class="space-y-6">
             @csrf
