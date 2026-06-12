@@ -20,9 +20,9 @@ Tugas 4
 
 Tugas 8
 <hr>Halaman Login : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/login
-
+<hr>
 Tugas 10 
-<hr>Halaman Transaction : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transactions
+Halaman Transaction : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transactions
 
 ---
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
