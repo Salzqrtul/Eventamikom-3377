@@ -9,7 +9,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\Admin\EventController as EventAdminController;
-use App\Http\Controllers\Admin\TransactionController; 
+use App\Http\Controllers\Admin\TransactionController; // <-- Dipakai pada Modul 10
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -25,7 +25,7 @@ Route::get('/bantuan',  function () { return view('bantuan'); });
 Route::get('/event-detail', [EventController::class, 'show'])->name('events.show');
 Route::get('/my-ticket',    [EventController::class, 'ticket'])->name('ticket');
 
-// --- RUTE CHECKOUT BARU ---
+// --- RUTE CHECKOUT (Modul 10) ---
 Route::get('/checkout/{event}', [CheckoutController::class, 'create'])->name('checkout.create');
 Route::post('/checkout/{event}', [CheckoutController::class, 'store'])->name('checkout.store');
 // ------------------------------------------
@@ -42,20 +42,21 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::post('login', [AuthController::class, 'login'])->name('login.post');
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
-
-    Route::middleware(['auth'])->group(function () {
+    // Menggunakan proteksi ganda 'auth' dan 'admin' sesuai standar keamanan modul
+    Route::middleware(['auth', 'admin'])->group(function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
         
-        
+        // --- SESUAI MODUL 10: Mengarahkan menu Transaksi Admin ke TransactionController ---
         Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
 
-       
+        // Resource Routes
         Route::resource('events',     EventAdminController::class);
         Route::resource('categories', CategoryController::class);
         Route::resource('partners',   PartnerController::class);
     });
 
 });
+
 // --- RUTE RAHASIA UNTUK ISI DATABASE DI LARAVEL CLOUD ---
 Route::get('/gas-seed', function () {
     try {
@@ -66,7 +67,8 @@ Route::get('/gas-seed', function () {
             \App\Models\User::create([
                 'name' => 'Administrator',
                 'email' => 'admin@amikom.ac.id',
-                'password' => bcrypt('password'), // Sesuai modul wajib di-bcrypt!
+                'password' => bcrypt('password'), 
+                'role' => 'admin', // Memastikan field role terisi agar lolos middleware 'admin'
             ]);
             return "Mantap! Akun admin@amikom.ac.id berhasil dimasukkan ke Database Cloud.";
         }
