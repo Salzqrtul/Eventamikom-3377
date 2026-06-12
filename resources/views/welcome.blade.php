@@ -152,4 +152,39 @@
             </div>
         </div>
     </section>
+
+    {{-- Section Kategori --}}
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="mb-10">
+            <h2 class="text-3xl font-extrabold mb-2">Kategori Event</h2>
+            <p class="text-slate-500 font-medium">Temukan event sesuai minatmu</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            @forelse($categories as $category)
+            <div class="bg-white border border-slate-100 rounded-2xl p-5 text-center shadow-sm hover:shadow-md hover:border-indigo-300 transition">
+                <span class="text-lg font-bold text-indigo-600">{{ $category->name }}</span>
+            </div>
+            @empty
+            <p class="col-span-4 text-center text-slate-400">Belum ada kategori.</p>
+            @endforelse
+        </div>
+    </section>
+
+    {{-- Section Partner --}}
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="mb-10">
+            <h2 class="text-3xl font-extrabold mb-2">Partner Kami</h2>
+            <p class="text-slate-500 font-medium">Platform ini didukung oleh partner terpercaya</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            @forelse($partners as $partner)
+            <div class="bg-white border border-slate-100 rounded-2xl p-6 flex flex-col items-center gap-3 shadow-sm hover:shadow-md transition">
+                <img src="{{ $partner->logo_url }}" alt="{{ $partner->name }}" class="h-12 object-contain">
+                <span class="text-sm font-semibold text-slate-700">{{ $partner->name }}</span>
+            </div>
+            @empty
+            <p class="col-span-4 text-center text-slate-400">Belum ada partner.</p>
+            @endforelse
+        </div>
+    </section>
 @endsection
