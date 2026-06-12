@@ -1,20 +1,28 @@
 # Project Penjualan Baju Batik jogja Salsabila 
 <hr>Nama : Salsabila Quratul Aini
 <hr>NIM : 24.12.3377
-<hr>Link : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+<hr>Link eventhub : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+
+Tugas 2
 <hr>Halaman Dashboard: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin
 <hr>Halaman Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/event-detail
 <hr>Halaman Transaksi: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transctions
 <hr>Halaman Beranda: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
 <hr>Halaman Detail Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/event-detail
 <hr>Halaman Checkout: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/checkout
+
+Tugas 3
+<hr>Link Screenshoot table events : https://drive.google.com/drive/folders/16fylkz7fBG0HPfAf4TKV6sQtIMjMLDOv?usp=sharing
+
+Tugas 4
 <hr>Halaman Kelola Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events
-
-
-<hr>Halaman CRUD: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events/create
+<hr>Halaman CRUD Kelola Events: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events/create
 
 Tugas 8
 <hr>Halaman Login : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/login
+
+Tugas 10 
+<hr>Halaman Transaction : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transactions
 
 ---
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
