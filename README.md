@@ -1,25 +1,37 @@
-# Project Penjualan Baju Batik jogja Salsabila 
-<hr>Nama : Salsabila Quratul Aini
-<hr>NIM : 24.12.3377
-<hr>Link eventhub : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+# Project EVENTHUB-3377
+Nama : Salsabila Quratul Aini
 
+NIM : 24.12.3377
+
+Link eventhub : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+<hr>
 Tugas 2
-<hr>Halaman Dashboard: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin
-<hr>Halaman Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/event-detail
-<hr>Halaman Transaksi: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transctions
-<hr>Halaman Beranda: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
-<hr>Halaman Detail Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/event-detail
-<hr>Halaman Checkout: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/checkout
 
+Halaman Dashboard: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin
+
+Halaman Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/event-detail
+
+Halaman Transaksi: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/transctions
+
+Halaman Beranda: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/
+
+Halaman Detail Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/event-detail
+
+Halaman Checkout: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/checkout
+<hr>
 Tugas 3
-<hr>Link Screenshoot table events : https://drive.google.com/drive/folders/16fylkz7fBG0HPfAf4TKV6sQtIMjMLDOv?usp=sharing
 
+Link Screenshoot table events : https://drive.google.com/drive/folders/16fylkz7fBG0HPfAf4TKV6sQtIMjMLDOv?usp=sharing
+<hr>
 Tugas 4
-<hr>Halaman Kelola Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events
-<hr>Halaman CRUD Kelola Events: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events/create
 
+Halaman Kelola Event: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events
+
+Halaman CRUD Kelola Events: https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/events/create
+<hr>
 Tugas 8
-<hr>Halaman Login : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/login
+
+Halaman Login : https://eventamikom-3377-main-sqyyun.free.laravel.cloud/admin/login
 <hr>
 Tugas 10 
 
